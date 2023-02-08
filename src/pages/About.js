@@ -1,6 +1,13 @@
+import UseComponents from '../hooks/UseComponents'
+
 const About = () => {
+    const { AboutText } = UseComponents()
+
     return (
-        <div>About Page</div>
+        <div>
+            <h2>About Page</h2>
+            <AboutText/>
+        </div>
     )
 }
 

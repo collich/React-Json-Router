@@ -1,8 +1,10 @@
 import NavBar from "../components/NavBar"
+import AboutText from "../components/AboutText"
 
 const UseComponents = () => {
     const valueToShare = {
-        NavBar
+        NavBar,
+        AboutText
     }
     return (valueToShare)
 }
