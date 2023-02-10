@@ -8,10 +8,15 @@ const NavBar = () => {
     }
 
     return (
-        <div className="flex justify-center">
-            <nav className="border p-2 mx-auto my-5 inline-block rounded-lg">
-                <NavLink to="/" className={({isActive}) => classNameElement(isActive) }>Home</NavLink>
-                <NavLink to="/about" className={({isActive}) => classNameElement(isActive) }>About</NavLink>
+        <div className="flex justify-between border">
+            <nav className="p-2 mx-auto my-5 inline-block rounded-lg">
+                <h1>Something</h1>
+            </nav>
+            <nav className="p-2 mx-auto my-5 inline-block rounded-lg">
+                <div>
+                    <NavLink to="/" className={({isActive}) => classNameElement(isActive) }>Home</NavLink>
+                    <NavLink to="/about" className={({isActive}) => classNameElement(isActive) }>About</NavLink>
+                </div>
             </nav>
         </div>
     )
